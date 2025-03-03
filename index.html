@@ -3,27 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Destination</title>
-    <link rel="stylesheet" href="dayOne.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Antarctica</h1>
-    <p>Antarctica is the southernmost continent on Earth, home to the South Pole. It is the coldest, driest, and windiest place on the planet, with vast ice sheets covering about 98% of its landmass. Despite its harsh conditions, it supports a variety of life, including penguins, seals, and numerous species of birds. Antarctica plays a crucial role in regulating global climate and sea levels, making it an important area for scientific research, particularly in areas like climate change and glaciology. The continent has no permanent human population, but is home to research stations from various countries.</p>
+<body> 
+    <div class="container">
+        <div class="stats-container">
+            <div class="details">
+                <h1>To Do App</h1>
+                
+                <div id="progressBar">
+                    <div id="progress"></div>
+                </div>
+            </div>
 
-    <img id="one" src="antatica.jpeg" alt="" >
-    <ul>
-        <li>
-            <h2>Ice Hiking and Mountaineering: For those with an adventurous spirit, ice hiking or even mountaineering is available in certain areas. You can trek on glaciers, scaling icy peaks for stunning views.</h2>
-        </li>
-        <li>
-            <h2>Wildlife Watching: See penguins, seals, and whales in their natural habitat. The continent is home to several species of penguins, such as the Emperor and Adelie penguins, and you may also encounter whales like orcas and humpbacks during certain seasons.</h2>
-        </li>
-        <li>
-            <h2>Zodiac Boat Rides: Take a ride in a Zodiac inflatable boat to explore the icy coastline, get closer to glaciers, and visit penguin colonies. It's an exciting way to see Antarctica's stunning landscapes from the water.</h2>
-        </li>
-    </ul>
-    <br><br>
-    <h3>Want to hangout some where book a trip on tapping the below link</h3>
-    <a href="dayOneSecond.html" id="trip">Book a Trip</a>
+            <div class="stats-numbers">
+                <p id="numbers">0/0</p>
+            </div>
+        </div>
+
+
+        <form action="">
+            <input id="taskInput" type="text" placeholder="Write your tasks">
+            <Button type="submit" id="submit">+</Button>
+        </form>
+
+        <ul id="task-list">
+        </ul>
+    </div>
+
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+
+
+
+
+
 </body>
 </html>
