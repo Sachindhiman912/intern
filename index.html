@@ -1,29 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Destination</title>
-    <link rel="stylesheet" href="dayOne.css">
-</head>
-<body>
-    <h1>Antarctica</h1>
-    <p>Antarctica is the southernmost continent on Earth, home to the South Pole. It is the coldest, driest, and windiest place on the planet, with vast ice sheets covering about 98% of its landmass. Despite its harsh conditions, it supports a variety of life, including penguins, seals, and numerous species of birds. Antarctica plays a crucial role in regulating global climate and sea levels, making it an important area for scientific research, particularly in areas like climate change and glaciology. The continent has no permanent human population, but is home to research stations from various countries.</p>
+    <title>Document</title>
 
-    <img id="one" src="antatica.jpeg" alt="" >
-    <ul>
-        <li>
-            <h2>Ice Hiking and Mountaineering: For those with an adventurous spirit, ice hiking or even mountaineering is available in certain areas. You can trek on glaciers, scaling icy peaks for stunning views.</h2>
-        </li>
-        <li>
-            <h2>Wildlife Watching: See penguins, seals, and whales in their natural habitat. The continent is home to several species of penguins, such as the Emperor and Adelie penguins, and you may also encounter whales like orcas and humpbacks during certain seasons.</h2>
-        </li>
-        <li>
-            <h2>Zodiac Boat Rides: Take a ride in a Zodiac inflatable boat to explore the icy coastline, get closer to glaciers, and visit penguin colonies. It's an exciting way to see Antarctica's stunning landscapes from the water.</h2>
-        </li>
-    </ul>
-    <br><br>
-    <h3>Want to hangout some where book a trip on tapping the below link</h3>
-    <a href="dayOneSecond.html" id="trip">Book a Trip</a>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"> <i class="fa-solid fa-basket-shopping"></i>Zepta Grocery</a>
+
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#features">Features</a>
+            <a href="#products">Products</a>
+            <a href="#categories">Categories</a>
+            <!-- <a href="#review">Review</a> -->
+            <!-- <a href="#blogs">Blogs</a> -->
+        </nav>
+
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+
+        <div class="shopping-cart">
+
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="watermelon.jpeg" alt="">
+
+                <div class="content">
+                    <h3>watermelon</h3>
+                    <span class="price">1 rupee</span>
+                    <span class="quantity">qty: 10</span>
+                </div>
+            </div>
+
+
+
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="onion.jpeg" alt="">
+
+                <div class="content">
+                    <h3>Onion</h3>
+                    <span class="price">1 rupee</span>
+                    <span class="quantity">qty: 10</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="lemon.jpeg" alt="">
+
+                <div class="content">
+                    <h3>Lemon</h3>
+                    <span class="price">1 rupee</span>
+                    <span class="quantity">qty: 10</span>
+                </div>
+            </div>
+
+
+
+
+            <div class="total">total : 254</div>
+            <a href="#" class="btn">Checkout</a>
+
+        </div>
+
+
+
+
+        <form action="" class="login-form" id="loginForm">
+            <h3>Login Now!</h3>
+            <input type="email" placeholder="enter your email" class="box" id="email">
+            <input type="password" placeholder="enter your password" class="box" id="password">
+
+            <p>forgot your password <a href="#">Click here</a></p>
+            <p>don't have an account <a href="#" id="newAcc">create now</a></p>
+            <input type="submit" value="login now" class="btn" id="submitBtn">
+        </form>
+
+
+        <form action="" class="signup-form" id="signupForm">
+            <h3>Signup Now!</h3>
+
+
+            <input type="text" placeholder="enter your full name" class="box" id="name">
+            <input type="email" placeholder="enter your email" class="box" id="createEmail">
+            <input type="password" placeholder="enter your password" class="box" id="createPassword">
+            <p>Already have an account <a href="" id="login">Click here!</a></p>
+            <p>Login !! <a href="" id="loginSignup">Click here</a></p>
+        
+        
+            <input type="submit" value="Sign Up" class="btn" id="signupSubmit">
+        </form>
+
+    </header>
+
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h1 id="wel"></h1>
+            <h3>fresh and <span>organic</span> products for you</h3>
+            <p>“Fresh from the farm, straight to your plate” “Nourish your body with nature's bounty” “Taste the goodness of nature” “Fuel your day with the power of fruits and veggies”</p>
+            <a href="#products" class="btn">Shop now</a>
+        </div>
+    </section>
+    <!-- home section ends -->
+
+
+    <!-- feature section starts  -->
+    <section class="features" id="features">
+        <h1 class="heading">Our <span>features</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="featuresFruits.jpeg" alt="">
+                <h3>Fresh and Organic</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ex!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="featuresDelivery.jpeg" alt="">
+                <h3>Free Delivery</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ex!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="featuresPayment.jpeg" alt="">
+                <h3>Easy Online Payment</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ex!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- feature secttion ends -->
+
+
+
+    <!-- products section starts -->
+    <section class="products" id="products">
+        <h1 class="heading">Our <span>Products</span></h1>
+
+        <div class="product-slider">
+            <div class="wrappper">
+
+                <div class="box">
+                    <img src="watermelon.jpeg" alt="">
+                    <h3>Fresh Watermelon</h3>
+                    <div class="price">800</div>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+
+                <div class="box">
+                    <img src="onion.jpeg" alt="">
+                    <h3>Fresh Onion</h3>
+                    <div class="price">800</div>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="box">
+                    <img src="lemon.jpeg" alt="">
+                    <h3>Fresh Lemon</h3>
+                    <div class="price">800</div>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="product-slider">
+            <div class="wrappper">
+
+                <div class="box">
+                    <img src="watermelon.jpeg" alt="">
+                    <h3>Fresh Watermelon</h3>
+                    <div class="price">800</div>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+
+                <div class="box">
+                    <img src="onion.jpeg" alt="">
+                    <h3>Fresh Onion</h3>
+                    <div class="price">800</div>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="box">
+                    <img src="lemon.jpeg" alt="">
+                    <h3>Fresh Lemon</h3>
+                    <div class="price">800</div>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- products section ends -->
+
+
+    <!-- categories section starts -->
+<section class="categories" id="categories">
+    <h1 class="heading">Product <span>Categories</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="categoriesVeges.jpeg" alt="">
+            <h3>vegetables</h3>
+            <p>upto 90% off</p>
+            <a href="" class="btn">Shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="categoriesFruits.jpeg" alt="">
+            <h3>vegetables</h3>
+            <p>upto 90% off</p>
+            <a href="" class="btn">Shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="categoriesDairy.jpeg" alt="">
+            <h3>vegetables</h3>
+            <p>upto 90% off</p>
+            <a href="" class="btn">Shop now</a>
+        </div>
+    </div>
+</section>
+    <!-- categories section ends -->
+
+
+
+    <!-- footer section starts -->
+     <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Zepta<i class="fas fa-shopping-basket"></i></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit exercitationem nobis sapiente, fugit explicabo ducimus architecto dolor facere blanditiis libero culpa odit necessitatibus, molestiae quidem dignissimos officiis. Natus, provident magnam.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab linkedin"></a>
+                    <a href="#" class="fab twitter"></a>
+                    <a href="#" class="fab instagram"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+               <a href="#" class="links"><i class="fas fa-phone"></i>+91 1584656468</a>
+               <a href="#" class="links"><i class="fas fa-phone"></i>+91 4864644</a>
+
+            </div>
+        </div>
+     </section>
+    <!-- footer section ends -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
